@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background:#05101c;
+    color: white;
+}
+.img{
+    filter: invert(100%);
+}
+.rotate{
+    animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
